@@ -1,5 +1,4 @@
 resource "aws_wafv2_web_acl" "waf" {
-  provider    = aws.us_east_1
   name        = "${var.name}-cf-waf"
   description = "WAF protection for CloudFront"
   scope       = "CLOUDFRONT"
